@@ -1,0 +1,21 @@
+.base {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+
+  &CrossedOff {
+    background-color: #ccc;
+  }
+}
+
+.categoryBtn {
+  height: 30px;
+  width: 30px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}

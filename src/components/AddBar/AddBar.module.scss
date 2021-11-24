@@ -1,0 +1,23 @@
+@import '~@chris-cross-crash/ck-css/color-defs';
+
+.base {
+  background-color: $indigo-900;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  display: flex;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  margin-right: 1rem;
+}
+
+.addBtn {
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
