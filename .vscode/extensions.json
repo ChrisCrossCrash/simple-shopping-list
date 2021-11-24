@@ -4,6 +4,7 @@
     "esbenp.prettier-vscode",
     "gruntfuggly.todo-tree",
     "syler.sass-indented",
-    "jock.svg"
+    "jock.svg",
+    "clinyong.vscode-css-modules"
   ]
 }

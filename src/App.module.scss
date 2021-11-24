@@ -1,0 +1,16 @@
+@import '~@chris-cross-crash/ck-css/color-defs';
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $zinc-700;
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+  max-width: var(--screen-xs);
+  background-color: #fff;
+}

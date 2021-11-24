@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import App from './App'
 import 'modern-normalize'
-import 'ck-css'
+import '@chris-cross-crash/ck-css'
 
 ReactDOM.render(
   <React.StrictMode>
