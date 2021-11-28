@@ -15,3 +15,5 @@ export type ItemObject = {
   category: ColorCategory
   crossedOff: boolean
 }
+
+export type SetStateFn<T> = React.Dispatch<React.SetStateAction<T>>
