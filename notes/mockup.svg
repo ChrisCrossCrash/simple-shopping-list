@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1125"
+   height="2436"
+   viewBox="0 0 1125 2436"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="mockup.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:snap-page="false"
+     inkscape:zoom="0.33896931"
+     inkscape:cx="172.58199"
+     inkscape:cy="895.36129"
+     inkscape:window-width="1536"
+     inkscape:window-height="841"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 1218 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="1125 : 1218 : 1"
+       inkscape:persp3d-origin="562.5 : 812 : 1"
+       id="perspective1113" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#87deaa;stroke-width:0.777986"
+       id="rect31"
+       width="1125"
+       height="269.36539"
+       x="0"
+       y="0" />
+    <rect
+       style="fill:#ffffff;stroke-width:0.914765"
+       id="rect423"
+       width="825.66351"
+       height="134.68269"
+       x="69.883377"
+       y="65.877396"
+       ry="29.278847" />
+    <ellipse
+       style="fill:#ff8080"
+       id="path469"
+       cx="998.02289"
+       cy="133.21875"
+       rx="57.09375"
+       ry="55.629807" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="1157.9784"
+       y="-1.4639443"
+       id="text5702"><tspan
+         sodipodi:role="line"
+         id="tspan5700"
+         x="1157.9784"
+         y="-1.4639443">The user presses the button</tspan><tspan
+         sodipodi:role="line"
+         x="1157.9784"
+         y="48.536057"
+         id="tspan5704">to add the item in the input to</tspan><tspan
+         sodipodi:role="line"
+         x="1157.9784"
+         y="98.536057"
+         id="tspan5708">the list (with the color category</tspan><tspan
+         sodipodi:role="line"
+         x="1157.9784"
+         y="148.53606"
+         id="tspan5712">set to the same as the button</tspan><tspan
+         sodipodi:role="line"
+         x="1157.9784"
+         y="198.53606"
+         id="tspan5714">color). Otherwise, the user can</tspan><tspan
+         sodipodi:role="line"
+         x="1157.9784"
+         y="248.53606"
+         id="tspan5716">hold the button to choose a</tspan><tspan
+         sodipodi:role="line"
+         x="1157.9784"
+         y="298.53604"
+         id="tspan5718">different category color before</tspan><tspan
+         sodipodi:role="line"
+         x="1157.9784"
+         y="348.53607"
+         id="tspan5720">adding the item.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.62723"
+       x="116.12922"
+       y="155.85165"
+       id="text8304"><tspan
+         sodipodi:role="line"
+         id="tspan8302"
+         x="116.12922"
+         y="155.85165"
+         style="stroke-width:1.62723">Eggs</tspan></text>
+    <g
+       id="g8325">
+      <rect
+         style="fill:#ffffff;stroke-width:0.606977;stroke:#666666"
+         id="rect21"
+         width="1125"
+         height="163.96153"
+         x="0"
+         y="269.36539" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.62723"
+         x="75.138832"
+         y="368.28586"
+         id="text6967"><tspan
+           sodipodi:role="line"
+           id="tspan6965"
+           x="75.138832"
+           y="368.28586"
+           style="stroke-width:1.62723">Milk</tspan></text>
+      <ellipse
+         style="fill:#ff8080;stroke-width:0.578947"
+         id="ellipse6969"
+         cx="998.02289"
+         cy="351.34616"
+         rx="33.054276"
+         ry="32.20673" />
+    </g>
+    <g
+       id="g8335"
+       transform="translate(0,163.96152)">
+      <rect
+         style="fill:#ffffff;stroke:#666666;stroke-width:0.606977"
+         id="rect8327"
+         width="1125"
+         height="163.96153"
+         x="0"
+         y="269.36539" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.62723"
+         x="75.138832"
+         y="368.28586"
+         id="text8331"><tspan
+           sodipodi:role="line"
+           id="tspan8329"
+           x="75.138832"
+           y="368.28586"
+           style="stroke-width:1.62723">Flour</tspan></text>
+      <ellipse
+         style="fill:#ff8080;stroke-width:0.578947"
+         id="ellipse8333"
+         cx="998.02289"
+         cy="351.34616"
+         rx="33.054276"
+         ry="32.20673" />
+    </g>
+    <g
+       id="g8345"
+       transform="translate(0,327.92304)">
+      <rect
+         style="fill:#ffffff;stroke:#666666;stroke-width:0.606977"
+         id="rect8337"
+         width="1125"
+         height="163.96153"
+         x="0"
+         y="269.36539" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.62723"
+         x="75.138832"
+         y="368.28586"
+         id="text8341"><tspan
+           sodipodi:role="line"
+           id="tspan8339"
+           x="75.138832"
+           y="368.28586"
+           style="stroke-width:1.62723">Garbage bags</tspan></text>
+      <ellipse
+         style="fill:#ff8080;stroke-width:0.578947"
+         id="ellipse8343"
+         cx="998.02289"
+         cy="351.34616"
+         rx="33.054276"
+         ry="32.20673" />
+    </g>
+    <g
+       id="g8355"
+       transform="translate(0,491.88456)">
+      <rect
+         style="fill:#ffffff;stroke:#666666;stroke-width:0.606977"
+         id="rect8347"
+         width="1125"
+         height="163.96153"
+         x="0"
+         y="269.36539" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.62723"
+         x="75.138832"
+         y="368.28586"
+         id="text8351"><tspan
+           sodipodi:role="line"
+           id="tspan8349"
+           x="75.138832"
+           y="368.28586"
+           style="stroke-width:1.62723">Lettuce</tspan></text>
+      <ellipse
+         style="fill:#2a7fff;stroke-width:0.578947"
+         id="ellipse8353"
+         cx="998.02289"
+         cy="351.34616"
+         rx="33.054276"
+         ry="32.20673" />
+    </g>
+    <g
+       id="g8365"
+       transform="translate(0,655.84608)">
+      <rect
+         style="fill:#ffffff;stroke:#666666;stroke-width:0.606977"
+         id="rect8357"
+         width="1125"
+         height="163.96153"
+         x="0"
+         y="269.36539" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.62723"
+         x="75.138832"
+         y="368.28586"
+         id="text8361"><tspan
+           sodipodi:role="line"
+           id="tspan8359"
+           x="75.138832"
+           y="368.28586"
+           style="stroke-width:1.62723">Tomatos</tspan></text>
+      <ellipse
+         style="fill:#2a7fff;stroke-width:0.578947"
+         id="ellipse8363"
+         cx="998.02289"
+         cy="351.34616"
+         rx="33.054276"
+         ry="32.20673" />
+    </g>
+    <g
+       id="g8375"
+       transform="translate(0,819.8076)">
+      <rect
+         style="fill:#cccccc;stroke:#666666;stroke-width:0.606977"
+         id="rect8367"
+         width="1125"
+         height="163.96153"
+         x="0"
+         y="269.36539" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#666666;fill-opacity:1;stroke:none;stroke-width:1.62723"
+         x="75.138832"
+         y="368.28586"
+         id="text8371"><tspan
+           sodipodi:role="line"
+           id="tspan8369"
+           x="75.138832"
+           y="368.28586"
+           style="stroke-width:1.62723;fill:#666666">Mayo</tspan></text>
+      <ellipse
+         style="fill:#ab37c8;stroke-width:0.578947"
+         id="ellipse8373"
+         cx="998.02289"
+         cy="351.34616"
+         rx="33.054276"
+         ry="32.20673" />
+    </g>
+    <g
+       id="g8385"
+       transform="translate(0,983.76912)">
+      <rect
+         style="fill:#cccccc;stroke:#666666;stroke-width:0.606977"
+         id="rect8377"
+         width="1125"
+         height="163.96153"
+         x="0"
+         y="269.36539" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:65.0892px;line-height:1.25;font-family:sans-serif;fill:#666666;fill-opacity:1;stroke:none;stroke-width:1.62723"
+         x="75.138832"
+         y="368.28586"
+         id="text8381"><tspan
+           sodipodi:role="line"
+           id="tspan8379"
+           x="75.138832"
+           y="368.28586"
+           style="stroke-width:1.62723;fill:#666666">Ketchup</tspan></text>
+      <ellipse
+         style="fill:#ab37c8;stroke-width:0.578947"
+         id="ellipse8383"
+         cx="998.02289"
+         cy="351.34616"
+         rx="33.054276"
+         ry="32.20673" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="-442.11057"
+       y="133.21875"
+       id="text2413"><tspan
+         sodipodi:role="line"
+         id="tspan2411"
+         x="-442.11057"
+         y="133.21875">AddBar</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -279.61298,121.50721 213.735575,16.10337"
+       id="path2792" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+       x="-406.70914"
+       y="372.17844"
+       id="text5684"><tspan
+         sodipodi:role="line"
+         x="-406.70914"
+         y="372.17844"
+         id="tspan6798">ListItem</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m -244.21155,360.46689 213.73558,16.10337"
+       id="path5686" />
+  </g>
+</svg>
