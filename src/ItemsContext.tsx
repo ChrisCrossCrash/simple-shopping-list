@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from 'react'
 import type { ItemObject, SetStateFn } from './types'
+import { useLocalStorage } from './utils/useLocalStorage'
 
 // FIXME: The following not-null assertions should be eliminated.
 //  https://github.com/typescript-cheatsheets/react#extended-example
@@ -14,7 +15,7 @@ type ItemsProviderProps = {
 }
 
 export const ItemsProvider = ({ children }: ItemsProviderProps) => {
-  const [items, setItems] = useState<ItemObject[]>([])
+  const [items, setItems] = useLocalStorage<ItemObject[]>('items', [])
 
   return (
     <ItemsContext.Provider value={items}>

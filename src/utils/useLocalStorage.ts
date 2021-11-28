@@ -11,9 +11,6 @@ type Jsonable =
   | Jsonable[]
   | { [prop: string]: Jsonable }
 
-// FIXME: Calling `useLocalStorage()` in multiple places throughout the app causes problems,
-//  since the different calls don't share the same state, but they do share the same local storage key.
-//  Find a way to call `useLocalStorage()` anywhere in the app, have the state be shared.
 export const useLocalStorage = <T extends Jsonable>(
   key: string,
   initialValue: T | (() => T)
