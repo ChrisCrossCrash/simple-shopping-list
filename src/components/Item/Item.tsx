@@ -50,8 +50,12 @@ export const Item = (props: ItemProps) => {
   }
 
   return (
-    <div className={baseStyle}>
-      <div className={styles.label} onClick={toggleCrossedOff}>
+    <div className={baseStyle} data-cy='item'>
+      <div
+        className={styles.label}
+        onClick={toggleCrossedOff}
+        data-cy='item-label'
+      >
         {props.item.name}
       </div>
 
@@ -61,6 +65,7 @@ export const Item = (props: ItemProps) => {
         style={{ backgroundColor: props.item.category }}
         type='button'
         onClick={() => setIsShowingCategoryMenu(!isShowingCategoryMenu)}
+        data-cy='item-category-btn'
       />
 
       {/* Remove Item Button */}
@@ -71,6 +76,7 @@ export const Item = (props: ItemProps) => {
             prevItems.filter((item) => item.name !== props.item.name)
           )
         }}
+        data-cy='item-delete-btn'
       >
         x
       </button>

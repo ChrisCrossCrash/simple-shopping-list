@@ -6,7 +6,7 @@ type CategoryMenuProps = {
 }
 
 export const CategoryMenu = (props: CategoryMenuProps) => (
-  <div className={styles.base}>
+  <div className={styles.base} data-cy='category-menu'>
     {Object.entries(categoryColors).map((category) => (
       <button
         key={category[0]}
@@ -17,6 +17,7 @@ export const CategoryMenu = (props: CategoryMenuProps) => (
           event.preventDefault()
           props.setCategory(category[0] as ColorCategory)
         }}
+        data-cy={`category-btn-${category[0]}`}
       />
     ))}
   </div>

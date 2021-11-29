@@ -39,8 +39,8 @@ export const AddBar = (props: AddBarProps) => {
     // Guard against submission if the event was from a click-n-hold
     if (isShowingCategoryMenu) return
 
-    setNewItem('') // Clear the input
     submitNewItem()
+    setNewItem('') // Clear the input
   }
 
   /** Handle the category being selected within `CategoryMenu` */
@@ -64,7 +64,7 @@ export const AddBar = (props: AddBarProps) => {
         type='text'
         className={styles.input}
         value={newItem}
-        onChange={(e) => setNewItem(e.target.value)}
+        onChange={(e) => setNewItem(e.target.value.trim())}
       />
 
       <ClickNHold time={1} onClickNHold={handleClickNHold}>
@@ -72,6 +72,7 @@ export const AddBar = (props: AddBarProps) => {
           className={styles.addBtn}
           style={{ backgroundColor: currentCategory }}
           type='submit'
+          data-cy='add-btn'
         >
           Add
         </button>
