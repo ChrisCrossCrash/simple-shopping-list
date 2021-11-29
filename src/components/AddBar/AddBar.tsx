@@ -21,7 +21,7 @@ export const AddBar = (props: AddBarProps) => {
       // Guard against duplicate or empty items
       if (
         prevItems.find(
-          (item) => item.name.toLowerCase() === newItem.toLowerCase()
+          (item) => item.name.toLowerCase() === newItem.trim().toLowerCase()
         ) ||
         !newItem
       ) {
@@ -31,7 +31,7 @@ export const AddBar = (props: AddBarProps) => {
       return [
         ...prevItems,
         {
-          name: newItem,
+          name: newItem.trim(),
           category: category ? category : currentCategory,
           crossedOff: false,
         },
@@ -70,7 +70,7 @@ export const AddBar = (props: AddBarProps) => {
         type='text'
         className={styles.input}
         value={newItem}
-        onChange={(e) => setNewItem(e.target.value.trim())}
+        onChange={(e) => setNewItem(e.target.value)}
         data-cy='add-bar-input'
       />
 

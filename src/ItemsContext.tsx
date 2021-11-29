@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext } from 'react'
 import type { ItemObject, SetStateFn } from './types'
 import { useLocalStorage } from './utils/useLocalStorage'
 

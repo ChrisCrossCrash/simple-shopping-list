@@ -28,6 +28,11 @@ describe('AddBar', () => {
       cy.get('[data-cy=add-bar-input]').type('  eggs{enter}')
       cy.get('[data-cy=item]').should('have.length', 1)
     })
+
+    it('Allows adding items with spaces', () => {
+      cy.get('[data-cy=add-bar-input]').type('Pop Tarts{enter}')
+      cy.get('[data-cy=item]').contains('Pop Tarts')
+    })
   })
 
   describe('ClickNHold', () => {
