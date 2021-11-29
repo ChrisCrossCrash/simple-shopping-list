@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import App from './App'
 import 'modern-normalize'
 import '@chris-cross-crash/ck-css'
+import './global.scss'
 import { ItemsProvider } from './ItemsContext'
 
 ReactDOM.render(

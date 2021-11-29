@@ -1,5 +1,6 @@
 import styles from './CategoryMenu.module.scss'
-import { categoryColors, ColorCategory } from '../../types'
+import { ColorCategory } from '../../categories'
+import { colorCategories } from '../../categories'
 
 type CategoryMenuProps = {
   setCategory: (category: ColorCategory) => void
@@ -7,17 +8,16 @@ type CategoryMenuProps = {
 
 export const CategoryMenu = (props: CategoryMenuProps) => (
   <div className={styles.base} data-cy='category-menu'>
-    {Object.entries(categoryColors).map((category) => (
+    {colorCategories.map((category) => (
       <button
-        key={category[0]}
-        className={styles.categoryBtn}
-        style={{ backgroundColor: category[1] }}
+        key={category}
+        className={`${styles.categoryBtn} category-${category}`}
         type='button'
         onClick={(event) => {
           event.preventDefault()
-          props.setCategory(category[0] as ColorCategory)
+          props.setCategory(category)
         }}
-        data-cy={`category-btn-${category[0]}`}
+        data-cy={`category-btn-${category}`}
       />
     ))}
   </div>

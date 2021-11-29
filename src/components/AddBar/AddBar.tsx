@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { ColorCategory, ItemObject } from '../../types'
+import { ItemObject } from '../../types'
+import { ColorCategory } from '../../categories'
 import styles from './AddBar.module.scss'
 import { useSetItems } from '../../ItemsContext'
 import { CategoryMenu } from '../CategoryMenu/CategoryMenu'
@@ -65,12 +66,12 @@ export const AddBar = (props: AddBarProps) => {
         className={styles.input}
         value={newItem}
         onChange={(e) => setNewItem(e.target.value.trim())}
+        data-cy='add-bar-input'
       />
 
       <ClickNHold time={1} onClickNHold={handleClickNHold}>
         <button
-          className={styles.addBtn}
-          style={{ backgroundColor: currentCategory }}
+          className={`${styles.addBtn} category-${currentCategory}`}
           type='submit'
           data-cy='add-btn'
         >

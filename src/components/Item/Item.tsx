@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import type { ItemObject, ColorCategory } from '../../types'
+import type { ItemObject } from '../../types'
 import { CategoryMenu } from '../CategoryMenu/CategoryMenu'
 import styles from './Item.module.scss'
 import { useSetItems } from '../../ItemsContext'
+import { ColorCategory } from '../../categories'
 
 type ItemProps = {
   item: ItemObject
@@ -61,8 +62,7 @@ export const Item = (props: ItemProps) => {
 
       {/* Change Category Button */}
       <button
-        className={styles.categoryBtn}
-        style={{ backgroundColor: props.item.category }}
+        className={`${styles.categoryBtn} category-${props.item.category}`}
         type='button'
         onClick={() => setIsShowingCategoryMenu(!isShowingCategoryMenu)}
         data-cy='item-category-btn'

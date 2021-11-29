@@ -2,9 +2,11 @@ import styles from './ItemList.module.scss'
 import { Item } from '../Item/Item'
 import { useItems } from '../../ItemsContext'
 import { ItemObject } from '../../types'
+import { colorCategories } from '../../categories'
 
 const sortItems = (items: ItemObject[]) => {
   let newItems = [...items]
+
   // sort by name
   newItems.sort((a, b) => {
     if (a.name < b.name) {
@@ -15,16 +17,14 @@ const sortItems = (items: ItemObject[]) => {
     }
     return 0
   })
+
   // sort by category
   newItems.sort((a, b) => {
-    if (a.category < b.category) {
-      return -1
-    }
-    if (a.category > b.category) {
-      return 1
-    }
-    return 0
+    const indexA = colorCategories.indexOf(a.category)
+    const indexB = colorCategories.indexOf(b.category)
+    return indexA - indexB
   })
+
   return newItems
 }
 
