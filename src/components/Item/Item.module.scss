@@ -1,6 +1,7 @@
 .base {
   position: relative;
   display: flex;
+  gap: 0.5rem;
   justify-content: space-between;
   align-items: center;
   height: 3rem;
@@ -10,6 +11,11 @@
   &CrossedOff {
     background-color: #ccc;
   }
+}
+
+.label {
+  // Take all the extra available space
+  flex: 1;
 }
 
 .categoryBtn {
