@@ -19,7 +19,12 @@ export const AddBar = (props: AddBarProps) => {
   const submitNewItem = (category?: ColorCategory) =>
     setItems((prevItems: ItemObject[]) => {
       // Guard against duplicate or empty items
-      if (prevItems.find((item) => item.name === newItem) || !newItem) {
+      if (
+        prevItems.find(
+          (item) => item.name.toLowerCase() === newItem.toLowerCase()
+        ) ||
+        !newItem
+      ) {
         return prevItems
       }
 

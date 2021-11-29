@@ -23,9 +23,9 @@ describe('AddBar', () => {
       cy.get('[data-cy=item]').should('have.length', 1)
     })
 
-    it("Can't add duplicate items (even if one has whitespace).", () => {
+    it("Can't add duplicate items (even if one has whitespace and is in a different case).", () => {
       cy.get('[data-cy=add-bar-input]').type('Eggs{enter}')
-      cy.get('[data-cy=add-bar-input]').type('  Eggs{enter}')
+      cy.get('[data-cy=add-bar-input]').type('  eggs{enter}')
       cy.get('[data-cy=item]').should('have.length', 1)
     })
   })
