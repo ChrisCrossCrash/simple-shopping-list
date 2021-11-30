@@ -13,6 +13,9 @@ export const CategoryMenu = (props: CategoryMenuProps) => (
     className={`${styles.base} ${props.className}`}
     data-cy='category-menu'
     style={props.style}
+    // Prevent clicks in the menu from bubbling up to the Item element,
+    // which would cause the Item to crossed off.
+    onClick={(event) => event.stopPropagation()}
   >
     {colorCategories.map((category) => (
       <button

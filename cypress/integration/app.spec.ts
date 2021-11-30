@@ -54,7 +54,7 @@ describe('AddBar', () => {
   })
 })
 
-describe('CategoryMenu', () => {
+describe('Item', () => {
   it('can change category', () => {
     cy.get('[data-cy=add-bar-input]').type('Eggs{enter}')
     cy.get('[data-cy=item]')
@@ -80,19 +80,37 @@ describe('CategoryMenu', () => {
   it('can be crossed off and un-crossed off', () => {
     cy.get('[data-cy=add-bar-input]').type('Eggs{enter}')
     cy.get('[data-cy=item-label]').click()
-    cy.get('[data-cy=item]').should(
-      'have.css',
-      'background-color',
-      'rgb(204, 204, 204)'
-    )
+    cy.get('[data-cy=item]')
+      .invoke('attr', 'class')
+      .should('contain', 'baseCrossedOff')
     cy.get('[data-cy=item-label]').click()
-    cy.get('[data-cy=item]').should(
-      'have.css',
-      'background-color',
-      'rgba(0, 0, 0, 0)'
-    )
+    cy.get('[data-cy=item]')
+      .invoke('attr', 'class')
+      .should('not.contain', 'baseCrossedOff')
   })
 
+  it("doesn't check off the item when the category button is clicked", () => {
+    // This happens when the click event on the category button isn't prevented from bubbling up to the item.
+    cy.get('[data-cy=add-bar-input]').type('Eggs{enter}')
+    // Open the category menu
+    cy.get('[data-cy=item-category-btn]').click()
+    // Check that the item wasn't crossed off
+    cy.get('[data-cy=item]')
+      .invoke('attr', 'class')
+      .should('not.contain', 'baseCrossedOff')
+    // Select a new category
+    cy.get('[data-cy=category-btn-orange]').click()
+    // Check that the item wasn't crossed off
+    cy.get('[data-cy=item]')
+      .invoke('attr', 'class')
+      .should('not.contain', 'baseCrossedOff')
+  })
+
+  // it('on a list of several items, clicking the delete button deletes the correct item')
+  // it('on a list of several items, changing the category of an item changes the category of the correct item')
+})
+
+describe('ItemList', () => {
   it('lists items in order of color first and name second', () => {
     cy.get('[data-cy=add-bar-input]').type('Pasta{enter}')
     cy.get('[data-cy=add-bar-input]').type('Milk{enter}')
@@ -112,7 +130,4 @@ describe('CategoryMenu', () => {
       expect(items[2].textContent).to.equal('Eggs')
     })
   })
-
-  // it('on a list of several items, clicking the delete button deletes the correct item')
-  // it('on a list of several items, changing the category of an item changes the category of the correct item')
 })

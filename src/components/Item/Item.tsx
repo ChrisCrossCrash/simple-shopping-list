@@ -51,20 +51,21 @@ export const Item = (props: ItemProps) => {
   }
 
   return (
-    <div className={baseStyle} data-cy='item'>
+    <div className={baseStyle} data-cy='item' onClick={toggleCrossedOff}>
       {/* Change Category Button */}
       <button
         className={`${styles.categoryBtn} category-${props.item.category}`}
         type='button'
-        onClick={() => setIsShowingCategoryMenu(!isShowingCategoryMenu)}
+        onClick={(event) => {
+          // Prevent the button from triggering the parent's onClick event,
+          // which would cause the item to be crossed off.
+          event.stopPropagation()
+          setIsShowingCategoryMenu(!isShowingCategoryMenu)
+        }}
         data-cy='item-category-btn'
       />
 
-      <div
-        className={styles.label}
-        onClick={toggleCrossedOff}
-        data-cy='item-label'
-      >
+      <div className={styles.label} data-cy='item-label'>
         {props.item.name}
       </div>
 
