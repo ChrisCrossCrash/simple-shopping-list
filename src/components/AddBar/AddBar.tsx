@@ -85,7 +85,10 @@ export const AddBar = (props: AddBarProps) => {
       </ClickNHold>
 
       {isShowingCategoryMenu && (
-        <CategoryMenu setCategory={handleCategorySelect} />
+        <CategoryMenu
+          setCategory={handleCategorySelect}
+          className={styles.categoryMenu}
+        />
       )}
     </form>
   )
