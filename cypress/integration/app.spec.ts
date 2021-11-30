@@ -33,6 +33,20 @@ describe('AddBar', () => {
       cy.get('[data-cy=add-bar-input]').type('Pop Tarts{enter}')
       cy.get('[data-cy=item]').contains('Pop Tarts')
     })
+
+    it('should let you tap out of the CategoryMenu', () => {
+      cy.get('[data-cy=add-bar-input]').type('Eggs')
+      // Hold down the "add" button for 1.5 seconds
+      cy.get('[data-cy=add-btn]').trigger('mousedown')
+      // Wait until the menu appears
+      cy.get('[data-cy=category-menu]')
+      // Release the mouse after the menu appears
+      cy.get('[data-cy=add-btn]').trigger('mouseup', { force: true })
+      // Tap out of the CategoryMenu by clicking somewhere outside of it
+      cy.get('[data-cy=category-menu-overlay]').click()
+      // The CategoryMenu should be gone
+      cy.get('[data-cy=category-menu]').should('not.exist')
+    })
   })
 
   describe('ClickNHold', () => {
@@ -43,7 +57,7 @@ describe('AddBar', () => {
       // Wait until the menu appears
       cy.get('[data-cy=category-menu]')
       // Release the mouse after the menu appears
-      cy.get('[data-cy=add-btn]').trigger('mouseup')
+      cy.get('[data-cy=add-btn]').trigger('mouseup', { force: true })
       // Click on the orange button
       cy.get('[data-cy=category-btn-orange]').click()
       cy.get('[data-cy=item]')
@@ -104,6 +118,18 @@ describe('Item', () => {
     cy.get('[data-cy=item]')
       .invoke('attr', 'class')
       .should('not.contain', 'baseCrossedOff')
+  })
+
+  it('should let you tap out of the CategoryMenu', () => {
+    cy.get('[data-cy=add-bar-input]').type('Eggs{enter}')
+    cy.get('[data-cy=item]')
+      .contains('Eggs')
+      .get('[data-cy=item-category-btn]')
+      .click()
+    // Tap out of the CategoryMenu by clicking somewhere outside of it
+    cy.get('[data-cy=category-menu-overlay]').click()
+    // The CategoryMenu should be gone
+    cy.get('[data-cy=category-menu]').should('not.exist')
   })
 
   // it('on a list of several items, clicking the delete button deletes the correct item')

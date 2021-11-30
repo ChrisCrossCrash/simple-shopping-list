@@ -81,6 +81,7 @@ export const AddBar = (props: AddBarProps) => {
           type='submit'
           data-cy='add-btn'
         >
+          {/* FIXME: This looks a little off center on some devices. */}
           <PlusIcon size={24} />
         </button>
       </ClickNHold>
@@ -89,6 +90,7 @@ export const AddBar = (props: AddBarProps) => {
         <CategoryMenu
           setCategory={handleCategorySelect}
           className={styles.categoryMenu}
+          setIsShowingCategoryMenu={setIsShowingCategoryMenu}
         />
       )}
     </form>

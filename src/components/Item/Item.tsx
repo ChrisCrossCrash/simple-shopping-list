@@ -87,6 +87,7 @@ export const Item = (props: ItemProps) => {
         <CategoryMenu
           setCategory={setCategory}
           className={styles.categoryMenu}
+          setIsShowingCategoryMenu={setIsShowingCategoryMenu}
         />
       )}
     </div>
