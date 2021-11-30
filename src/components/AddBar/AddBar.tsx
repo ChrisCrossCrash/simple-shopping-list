@@ -5,6 +5,7 @@ import styles from './AddBar.module.scss'
 import { useSetItems } from '../../ItemsContext'
 import { CategoryMenu } from '../CategoryMenu/CategoryMenu'
 import ClickNHold from 'react-click-n-hold'
+import { PlusIcon } from '@primer/octicons-react'
 
 type AddBarProps = {}
 
@@ -80,7 +81,7 @@ export const AddBar = (props: AddBarProps) => {
           type='submit'
           data-cy='add-btn'
         >
-          Add
+          <PlusIcon size={24} />
         </button>
       </ClickNHold>
 

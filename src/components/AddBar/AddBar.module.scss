@@ -5,7 +5,7 @@
   height: var(--add-bar-height);
   width: 100%;
   max-width: var(--screen-xs);
-  background-color: $indigo-900;
+  background-color: $slate-400;
   padding: 1rem;
   color: white;
   display: flex;
@@ -16,16 +16,18 @@
   width: 100%;
   border: none;
   border-radius: 1rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem;
   // A little left padding to keep the border-radius from clipping the text
   padding-left: 0.5em;
 }
 
 .addBtn {
   border: none;
-  border-radius: 10px;
-  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
   cursor: pointer;
+  color: white;
 }
 
 .categoryMenu {

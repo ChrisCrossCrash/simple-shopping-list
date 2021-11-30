@@ -9,6 +9,7 @@ $item-height: 3rem;
   height: $item-height;
   border-bottom: 1px solid #ccc;
   padding: 1rem;
+  cursor: pointer;
 
   &CrossedOff {
     background-color: #ccc;
@@ -35,4 +36,18 @@ $item-height: 3rem;
   top: $item-height;
   left: 0.5rem;
   right: auto;
+}
+
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #ddd;
+  }
 }

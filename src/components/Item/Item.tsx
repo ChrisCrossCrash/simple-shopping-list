@@ -4,6 +4,7 @@ import { CategoryMenu } from '../CategoryMenu/CategoryMenu'
 import styles from './Item.module.scss'
 import { useSetItems } from '../../ItemsContext'
 import { ColorCategory } from '../../categories'
+import { XIcon } from '@primer/octicons-react'
 
 type ItemProps = {
   item: ItemObject
@@ -69,8 +70,9 @@ export const Item = (props: ItemProps) => {
         {props.item.name}
       </div>
 
-      {/* Remove Item Button */}
+      {/* Delete Item Button */}
       <button
+        className={styles.deleteBtn}
         type='button'
         onClick={() => {
           setItems((prevItems: ItemObject[]) =>
@@ -79,7 +81,7 @@ export const Item = (props: ItemProps) => {
         }}
         data-cy='item-delete-btn'
       >
-        x
+        <XIcon size={24} />
       </button>
       {isShowingCategoryMenu && (
         <CategoryMenu
