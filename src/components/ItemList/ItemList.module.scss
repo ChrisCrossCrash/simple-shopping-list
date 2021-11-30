@@ -1,4 +1,7 @@
 .base {
+  // Offset the list by the height of the AddBar component.
+  // IDEA: It would be nice if this wasn't so coupled to the height of the AddBar.
+  margin-top: var(--add-bar-height);
   display: flex;
   flex-direction: column;
 }

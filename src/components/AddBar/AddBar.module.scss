@@ -1,12 +1,15 @@
 @import '~@chris-cross-crash/ck-css/color-defs';
 
 .base {
-  position: relative;
-  background-color: $indigo-900;
+  position: fixed;
+  height: var(--add-bar-height);
   width: 100%;
+  max-width: var(--screen-xs);
+  background-color: $indigo-900;
   padding: 1rem;
   color: white;
   display: flex;
+  z-index: 1000;
 }
 
 .input {
